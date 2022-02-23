@@ -27,6 +27,13 @@ function WrapLF(arr){
 // 先頭にスペースがある場合改行
 // アルファベットの時は改行ロジックを変更
 
+// 転び字を実装
+// 鏡文字を実装
+// トップ文字を大きくするやつを実装
+
+// フォント・文字サイズ設定を実装
+// CSS調整
+
 
 function ArticleCanvas(ctx, x, y, text){
 	if(typeof ctx != 'object' || typeof x != 'number' || typeof y  != 'number'){
