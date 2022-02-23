@@ -60,6 +60,49 @@
             let textfrom = document.querySelector('textarea[name="userinput"]');
             ArticleCanvas(ctx, 10, 40, textfrom.value);
         }
+
+
+
+
+var start_x = 10;
+var start_y = 500;
+
+ctx.rect(start_x, start_y, 400, 400);
+ctx.stroke();
+
+ctx.font = "18px 'ＭＳ ゴシック'";
+
+ctx.rotate(Math.PI / -2);
+ctx.fillText('転', -(start_y + 21), 24, 400 );
+
+ctx.rotate(Math.PI / 2);
+ctx.fillText('び字、転び字、転び字、', start_x + 18, start_y + 18, 400 );
+
+
+start_y = start_y + 40;
+
+ctx.rotate(Math.PI / 2);
+ctx.fillText('転', start_y + 3, -12, 400 );
+
+ctx.rotate(Math.PI / -2);
+ctx.fillText('び字、転び字、転び字、', start_x + 18, start_y + 18, 400 );
+
+start_y = start_y + 40;
+ctx.fillText('転び字、転び字、転び字、', start_x, start_y + 18, 400 );
+
+start_x = 40;
+start_y = start_y + 40;
+ctx.fillText('転', start_x, start_y, 400 );
+ctx.rect(start_x, start_y - 15, 18, 18);
+ctx.stroke();
+
+
+
+
+
+
+
+
     </script>
 </body>
 </html>

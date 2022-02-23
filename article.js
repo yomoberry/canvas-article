@@ -1,3 +1,15 @@
+// 改行文字で折り返し
+function WrapLF(arr){
+	let result_array = [];
+	for(var i = 0; i < arr.length; i++){
+		let splited = arr[i].split("\n");
+		Array.prototype.push.apply(result_array, splited)
+	}
+	return result_array;
+}
+// アルファベットの時は改行ロジックを変更
+function WrapAlphabetic(arr){}
+
 
 // 文字数で折り返し
 function WrapLength(arr, length){
@@ -12,20 +24,12 @@ function WrapLength(arr, length){
 	return result_array;
 }
 
-// 改行文字で折り返し
-function WrapLF(arr){
-	let result_array = [];
-	for(var i = 0; i < arr.length; i++){
-		let splited = arr[i].split("\n");
-		Array.prototype.push.apply(result_array, splited)
-	}
-	return result_array;
-}
+
 
 // 他タスク
 // 句読点が先頭に来ているとき改行
 // 先頭にスペースがある場合改行
-// アルファベットの時は改行ロジックを変更
+
 
 // 転び字を実装
 // 鏡文字を実装
