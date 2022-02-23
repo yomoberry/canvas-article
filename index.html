@@ -37,7 +37,7 @@
 	<div class="wrap">
 		<div class="main">
 			<section class="area_text">
-				<textarea name="userinput">
+				<textarea id="userinput">
 セントエルモの火の名は、船乗りの守護聖人である聖エルモ（エラスムス）に由来する。彼はイタリアに向かう船に乗船中、嵐に見舞われ、船は転覆の危険にさらされる。聖人が熱心に神に祈ると、嵐はおさまる。そして帆柱の先端に青い炎が踊り出した、と伝えられているからである。イタリア・ガエータの聖エラスモ大聖堂（it:Cattedrale dei Santi Erasmo e Marciano e di Santa Maria Assunta）でよく見られたためにこの名がついたというのは俗説である。
 セントエルモの火は、カエサルの『アフリカ戦記』（De Bello Africo）、大プリニウスの『博物誌』（Naturalis Historia）、メルヴィルの『白鯨』、ダーウィンがヘンズローに送ったビーグル号での経験を書いた書簡、コールリッジの『老水夫行』（The Rime of the Ancient Mariner）、マゼランの世界周航に随行したピガフェッタの航海記、カモエンスの叙事詩『ルシアダス』などにおいて言及されている。
 大プリニウスによれば、古典期のギリシアでは、発光が一つの場合「ヘレナ」、二つの場合「カストルとポルックス」と呼んだ。アルゴー船の神話によると、同船に乗り組んでいたカストルとポルックスの頭上に光が灯ったところ嵐が静まったので、この双子は航海の守護神とあがめられ、船乗りの間ではセントエルモの火が二つ出現すると嵐が収まると信じられたという。</textarea>
@@ -57,11 +57,9 @@
 
         function DoAct(){
             ctx.clearRect(0, 0, 720, 1080);
-            let textfrom = document.querySelector('textarea[name="userinput"]');
-            ArticleCanvas(ctx, 10, 40, textfrom.value);
+            let text = document.getElementById('userinput').value;
+            ArticleCanvas(ctx, 10, 40, text);
         }
-
-
 
 
 var start_x = 10;
